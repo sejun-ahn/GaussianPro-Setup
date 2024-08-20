@@ -34,10 +34,10 @@ setup(
     name='gaussianpro',
     ext_modules=[
         CUDAExtension('gaussianpro',
-            """
-            include_dirs=['/data/kcheng/anaconda3/envs/procuda/include/opencv4', '/usr/local/cuda-11.7/include', '.'],
-            library_dirs=['/data/kcheng/anaconda3/envs/procuda/lib'],
-            """
+            
+            # include_dirs=['/data/kcheng/anaconda3/envs/procuda/include/opencv4', '/usr/local/cuda-11.7/include', '.'],
+            # library_dirs=['/data/kcheng/anaconda3/envs/procuda/lib'],
+
             include_dirs=['/home/ahn/anaconda3/envs/gaussianpro/include/opencv4', '/usr/local/cuda-11.8/include', '.'],
             library_dirs=['/home/ahn/anaconda3/envs/gaussianpro/lib'],
             libraries=['opencv_core', 'opencv_imgproc', 'opencv_highgui', 'opencv_imgcodecs'],  
