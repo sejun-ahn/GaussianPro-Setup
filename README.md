@@ -11,7 +11,7 @@ Ubuntu 22.04.4 LTS, RTX4090, CUDA 11.8 (Tested)
 ```shell
 git clone https://github.com/kcheong/GaussianPro.git --recursive
 ```
-
+### Create Conda Environment 
 ```shell
 conda env create --file environment.yml
 conda activate gaussianpro
